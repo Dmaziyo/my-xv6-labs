@@ -41,7 +41,7 @@ sys_sysinfo(void)
     return -1;
   info.nproc = 
   info.freemem = acquire_freemem();
-   if(copyout(p->pagetable, addr, (char *)&info, sizeof(sysinfo)) < 0)
+   if(copyout(p->pagetable, addr, (char *)&info, sizeof(info)) < 0)
       return -1;
   return 0;  // not reached
 }
