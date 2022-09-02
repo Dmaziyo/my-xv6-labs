@@ -36,7 +36,7 @@ sys_sysinfo(void)
   //   return -1;
   // struct proc *p = myproc();
   // p->trace_mask = mask;
-  printf("操作?");
+  printf("test!!!");
   return 0;  // not reached
 }
 
